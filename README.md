@@ -1,4 +1,4 @@
-打包工具
+##打包工具
 
 
 ==== 使用方法： ====
@@ -38,3 +38,4 @@ python packages.py colorpick faarao colorpick 1
 
 
 参考:[[http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html|http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html]]
+
