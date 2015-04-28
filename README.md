@@ -16,18 +16,18 @@ python packages.py 生成的文件名 包名 插件名 插件路径(1或2.1代�
 例如：打包Faarao_Colorpick插件 并保存到colorpick目录。
 
 
-<code>
+
 如果Faarao_Colorpick插件是放在app/code/local下面的,就这样:
-
+<code>
 python packages.py colorpick faarao colorpick 2
-
+</code>
 如果Faarao_Colorpick插件是放在app/code/community下面的,就这样:
-
+<code>
 python packages.py colorpick faarao colorpick 1
 </code>
 
 
-注意：
+##注意：
 
 
 有可能模板和layout路径存放的名字不是按照插件名来的，所有会有漏掉。到时候自己再加进去。
@@ -37,5 +37,5 @@ python packages.py colorpick faarao colorpick 1
 
 
 
-参考:[[http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html|http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html]]
+参考:http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html|http://www.cnblogs.com/hongten/archive/2013/07/28/hongten_python_upper_lower.html
 
