@@ -17,14 +17,13 @@ python packages.py 生成的文件名 包名 插件名 插件路径(1或2.1代�
 
 
 
-如果Faarao_Colorpick插件是放在app/code/local下面的,就这样:
-<code>
-python packages.py colorpick faarao colorpick 2
-</code>
-如果Faarao_Colorpick插件是放在app/code/community下面的,就这样:
-<code>
-python packages.py colorpick faarao colorpick 1
-</code>
+###如果Faarao_Colorpick插件是放在app/code/local下面的,就这样:
+
+*python packages.py colorpick faarao colorpick 2
+
+###如果Faarao_Colorpick插件是放在app/code/community下面的,就这样:
+
+*python packages.py colorpick faarao colorpick 1
 
 
 ##注意：
