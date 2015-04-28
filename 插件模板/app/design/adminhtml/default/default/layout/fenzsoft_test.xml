@@ -1,0 +1,11 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>test/test.js</script></action>
+	      </reference>
+	      <reference name="content">
+	          <block type="test/adminhtml_template" name="test.adminhtml.template" />
+  	    </reference>
+    </default>
+</layout> -->

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fenzsoft_Test>
+            <version>0.1.0</version>
+        </Fenzsoft_Test>
+    </modules>
+    <frontend>
+        <secure_url>
+          <test>/test</test>
+        </secure_url>
+        <events>
+           <!--  <checkout_type_onepage_save_order>
+                <observers>
+                    <test_save_customercomment>
+                        <type>model</type>
+                        <class>Fenzsoft_Test_Helper_Data</class>
+                        <method>setCustomerComment</method>
+                    </test_save_customercomment>
+                </observers>
+            </checkout_type_onepage_save_order> -->
+        </events>
+        <routers>
+            <test>
+                <use>standard</use>
+                <args>
+                    <module>Fenzsoft_Test</module>
+                    <frontName>test</frontName>
+                </args>
+            </test>
+<!--             <checkout>
+                <args>
+                    <modules>
+                        <Fenzsoft_Test before="Mage_Checkout">Fenzsoft_Test</Fenzsoft_Test>
+                    </modules>
+                </args>
+            </checkout> -->
+        </routers>
+        <layout>
+            <updates>
+                <Test module="Fenzsoft_Test">
+                    <file>fenzsoft_test.xml</file>
+                </Test>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Fenzsoft_Test>
+                    <files>
+                        <default>fenzsoft_test.csv</default>
+                    </files>
+                </Fenzsoft_Test>
+            </modules>
+        </translate>
+    </frontend>
+    <admin>
+        <routers>
+            <test>
+                <use>admin</use>
+                <args>
+                    <module>Fenzsoft_Test</module>
+                    <frontName>test</frontName>
+                </args>
+            </test>
+            <!-- rewrite controller -->
+            <!-- <adminhtml>
+                <args>
+                    <modules>
+                        <Fenzsoft_Test before="Mage_Adminhtml">Fenzsoft_Test_Adminhtml</Fenzsoft_Test>
+                    </modules>
+                </args>
+            </adminhtml> -->
+        </routers>
+    </admin>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <test>
+                                            <title>fenzsoft test</title>
+                                        </test>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <test>
+                    <file>fenzsoft_test.xml</file>
+                </test>
+            </updates>
+        </layout>
+        <events>
+<!--             <catalog_product_edit_action>
+                <observers>
+                    <test_observer_create_product_attribute>
+                        <class>test/observer_catalog_product_attribute</class>
+                        <method>createProductAttribute</method>
+                    </test_observer_create_product_attribute>
+                </observers>
+            </catalog_product_edit_action> -->
+        </events>
+    </adminhtml>
+    <global>
+        <models>
+            <test>
+                <class>Fenzsoft_Test_Model</class>
+            </test>
+            <!-- rewrite model -->
+            <!-- <sales>
+                <rewrite>
+                    <quote>Fenzsoft_Test_Model_Sales_Quote</quote>
+                </rewrite>
+            </sales> -->
+        </models>
+        <resources>
+            <test_setup>
+                <setup>
+                    <module>Fenzsoft_Test</module>
+                    <class>Mage_Sales_Model_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </test_setup>
+        </resources>
+        <blocks>
+            <test>
+                 <class>Fenzsoft_Test_Block</class>
+            </test>
+            <!-- rewrite block -->
+<!--             <checkout>
+                <rewrite>
+                    <onepage_link>Fenzsoft_Test_Block_Checkout_Onepage_Link</onepage_link>
+                </rewrite>
+            </checkout> -->
+        </blocks>
+        <helpers>
+            <test><class>Fenzsoft_Test_Helper</class></test>
+            <!-- rewrite helper -->
+<!--             <checkout>
+                <rewrite>
+                    <url>Fenzsoft_Test_Helper_Url</url>
+                </rewrite>
+            </checkout> -->
+        </helpers>
+    </global>
+    <crontab>
+        <jobs>
+            <!--<send_auction_email>
+                <schedule>
+                    <cron_expr>*/1 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>test/cron::sendAuctionEmail</model>
+                </run>
+        </send_auction_email>-->
+        </jobs>
+    </crontab>
+    <default>
+        <test>
+            <test_setting>
+                <enabled>1</enabled>
+            </test_setting>
+        </test>
+    </default>
+</config>

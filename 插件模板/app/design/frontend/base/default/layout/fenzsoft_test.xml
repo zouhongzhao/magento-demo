@@ -1,0 +1,15 @@
+<!-- <?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>test/js/test.js</name></action>
+            <action method="addCss"><stylesheet>test/test.css</stylesheet></action>
+            <action method="addJs"><script>test/test.js</script></action>
+        </reference>
+        
+        <reference name="content">
+            <block type="test/template" template="test/template.phtml" name="test-template" />
+        </reference>
+    </default>
+</layout> -->

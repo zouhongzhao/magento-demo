@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Fenzsoft_Test>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Fenzsoft_Test>
+    </modules>
+</config>
