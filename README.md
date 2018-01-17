@@ -36,6 +36,7 @@ python packages.py colorpick faarao colorpick 1
 
 
 现在window和linux平台都能直接用了(有bug的话记得找我)
+进qq群找我，群号220619440
 
 
 
